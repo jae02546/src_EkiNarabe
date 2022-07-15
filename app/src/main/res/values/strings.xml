@@ -1,0 +1,169 @@
+<resources>
+    <string name="app_name">EkiNarabe</string>
+    <string name="app_label">駅並べ</string>
+
+    <!-- アクションバーメニュー -->
+    <string name="menu_player">プレイヤー</string>
+    <string name="menu_selectLine">路線選択</string>
+    <string name="menu_selectPlayer">プレイヤー選択</string>
+    <string name="menu_setting">設定</string>
+
+    <!-- プレーヤーNo -->
+    <string name="setting_playerNo_key">setting_playerNo</string>
+    <string name="setting_playerNo_defaultValue">1</string>
+
+    <!-- プレイヤー名 -->
+    <string name="setting_playerName_title">プレイヤー名</string>
+    <string name="setting_playerName1_key">setting_player1</string>
+    <string name="setting_playerName1_title">プレイヤー1</string>
+    <string name="setting_playerName1_defaultValue">ぷれいや1</string>
+    <string name="setting_playerName2_key">setting_player2</string>
+    <string name="setting_playerName2_title">プレイヤー2</string>
+    <string name="setting_playerName2_defaultValue">ぷれいや2</string>
+    <string name="setting_playerName3_key">setting_player3</string>
+    <string name="setting_playerName3_title">プレイヤー3</string>
+    <string name="setting_playerName3_defaultValue">ぷれいや3</string>
+    <string name="setting_playerName4_key">setting_player4</string>
+    <string name="setting_playerName4_title">プレイヤー4</string>
+    <string name="setting_playerName4_defaultValue">ぷれいや4</string>
+    <string name="setting_playerName5_key">setting_player5</string>
+    <string name="setting_playerName5_title">プレイヤー5</string>
+    <string name="setting_playerName5_defaultValue">ぷれいや5</string>
+
+    <!-- 効果音 -->
+    <string name="setting_soundNo_key">setting_sound</string>
+    <string name="setting_soundNo_defaultValue">0</string>
+    <string name="setting_sound_title">効果音</string>
+    <string name="setting_sound_entries_comp_drag">並べ替えとコンプ</string>
+    <string name="setting_sound_entries_comp">コンプのみ</string>
+    <string name="setting_sound_entries_none">無し</string>
+    <array name="setting_sound_entries">
+        <item>@string/setting_sound_entries_comp_drag</item>
+        <item>@string/setting_sound_entries_comp</item>
+        <item>@string/setting_sound_entries_none</item>
+    </array>
+    <array name="setting_soundNo_entryValues">
+        <item>"0"</item>
+        <item>"1"</item>
+        <item>"2"</item>
+    </array>
+
+    <!-- バイブレーション -->
+    <string name="setting_vibrationNo_key">setting_vibration</string>
+    <string name="setting_vibrationNo_defaultValue">1</string>
+    <string name="setting_vibration_title">バイブレーション</string>
+    <string name="setting_vibration_entries_comp_drag">並べ替えとコンプ</string>
+    <string name="setting_vibration_entries_comp">コンプのみ</string>
+    <string name="setting_vibration_entries_none">無し</string>
+    <array name="setting_vibration_entries">
+        <item>@string/setting_vibration_entries_comp_drag</item>
+        <item>@string/setting_vibration_entries_comp</item>
+        <item>@string/setting_vibration_entries_none</item>
+    </array>
+    <array name="setting_vibrationNo_entryValues">
+        <item>"0"</item>
+        <item>"1"</item>
+        <item>"2"</item>
+    </array>
+
+    <!-- データセット（路線データ） -->
+    <string name="setting_datasetNo_key">setting_datasetNo</string>
+    <string name="setting_datasetNo_defaultValue">0</string>
+    <string name="setting_dataset_title">路線データ</string>
+    <!-- データセット名（路線データ名）データセットが増えた場合は最初に追加 -->
+    <string name="setting_dataset_entries_202205">2022年05月</string>
+    <string name="setting_dataset_entries_202201">2022年01月</string>
+    <string name="setting_dataset_entries_202112">2021年12月</string>
+    <string name="setting_dataset_entries_202111">2021年11月</string>
+    <string name="setting_dataset_entries_202110">2021年10月</string>
+    <!-- データセット名配列（路線データ名配列）データセット名が増えた場合は最初に追加 -->
+    <!-- リリース後に使用しなくなったデータセット名は削除する、再利用してはいけない -->
+    <array name="setting_dataset_entries">
+        <item>@string/setting_dataset_entries_202205</item>
+    </array>
+    <!-- データセットNo配列（路線データNo配列）データセットが増えた場合は最後に追加 -->
+    <!-- リリース後に使用しなくなったデータセットNoは削除する、Noを再利用してはいけない -->
+    <array name="setting_datasetNo_entryValues">
+        <item>"0"</item>
+    </array>
+<!--    &lt;!&ndash; データセット名配列（路線データ名配列）データセット名が増えた場合は最初に追加 &ndash;&gt;-->
+<!--    &lt;!&ndash; リリース後に使用しなくなったデータセット名は削除する、再利用してはいけない &ndash;&gt;-->
+<!--    <array name="setting_dataset_entries">-->
+<!--        <item>@string/setting_dataset_entries_202205</item>-->
+<!--        <item>@string/setting_dataset_entries_202201</item>-->
+<!--        <item>@string/setting_dataset_entries_202112</item>-->
+<!--        <item>@string/setting_dataset_entries_202111</item>-->
+<!--        <item>@string/setting_dataset_entries_202110</item>-->
+<!--    </array>-->
+<!--    &lt;!&ndash; データセットNo配列（路線データNo配列）データセットが増えた場合は最後に追加 &ndash;&gt;-->
+<!--    &lt;!&ndash; リリース後に使用しなくなったデータセットNoは削除する、Noを再利用してはいけない &ndash;&gt;-->
+<!--    <array name="setting_datasetNo_entryValues">-->
+<!--        <item>"0"</item>-->
+<!--        <item>"1"</item>-->
+<!--        <item>"2"</item>-->
+<!--        <item>"3"</item>-->
+<!--        <item>"4"</item>-->
+<!--    </array>-->
+
+    <!-- プライバシーポリシー -->
+    <string name="setting_privacy_policy_key">setting_privacy_policy</string>
+    <string name="setting_privacy_policy_title">プライバシーポリシー</string>
+    <string name="setting_privacy_policy_url">https://jae02546.github.io/ekinarabe/privacypolicy/privacypolicy.html</string>
+
+    <!-- このアプリについて -->
+    <string name="setting_about_key">setting_about</string>
+    <string name="setting_about_title">このアプリについて</string>
+    <string name="setting_about_url">https://jae02546.github.io/ekinarabe/</string>
+
+    <!-- 路線選択アクションバーメニュー -->
+    <string name="menu_search">検索</string>
+    <string name="menu_filter">地域選択</string>
+
+    <!-- 検索 -->
+    <string name="search_hint">路線名を検索</string>
+
+    <!-- フィルタ -->
+    <string name="menu_filter0_title">ぜんぶ</string>
+    <string name="menu_filter1_title">北海道</string>
+    <string name="menu_filter2_title">東北</string>
+    <string name="menu_filter3_title">関東</string>
+    <string name="menu_filter4_title">中部</string>
+    <string name="menu_filter5_title">近畿</string>
+    <string name="menu_filter6_title">中国</string>
+    <string name="menu_filter7_title">四国</string>
+    <string name="menu_filter8_title">九州・沖縄</string>
+    <array name="menu_filter_title">
+        <item>@string/menu_filter</item> <!--ここは地域選択とする-->
+        <item>@string/menu_filter1_title</item>
+        <item>@string/menu_filter2_title</item>
+        <item>@string/menu_filter3_title</item>
+        <item>@string/menu_filter4_title</item>
+        <item>@string/menu_filter5_title</item>
+        <item>@string/menu_filter6_title</item>
+        <item>@string/menu_filter7_title</item>
+        <item>@string/menu_filter8_title</item>
+    </array>
+
+    <!-- 路線選択明細ボタン -->
+    <string name="button_init_text">最初から</string>
+    <string name="button_cont_text">続きから</string>
+    <string name="button_init_key">init</string>
+    <string name="button_cont_key">cont</string>
+
+    <!--ヒント-->
+    <string name="hint_text">Hint</string>
+    <!--<string name="hint_text">Wikipedia</string>-->
+
+    <!-- 路線No -->
+    <!-- プレーヤ毎とする-->
+    <!-- ちょっとまて、データセット毎に路線が違うから路線ごとに持たないとだめ? -->
+    <!--    <string name="setting_lineNo_key">setting_lineNo</string>-->
+    <!--    <string name="setting_lineNo_defaultValue">0</string>-->
+
+    <!-- プレーヤ、データセット毎に持つことにする -->
+    <!-- フィルタNo -->
+    <!--    <string name="setting_filterNo_key">setting_filterNo</string>-->
+    <!--    <string name="setting_filterNo_defaultValue">0</string>-->
+
+
+</resources>

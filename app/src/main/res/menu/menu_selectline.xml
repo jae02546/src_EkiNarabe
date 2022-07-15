@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menuSearch"
+        android:title="@string/menu_search"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="ifRoom" />
+
+    <!--    app:showAsAction="collapseActionView|ifRoom" />-->
+
+    <item
+        android:id="@+id/menuFilter"
+        android:title="@string/menu_filter"
+        app:showAsAction="ifRoom">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/menuFilter0"
+                    android:title="@string/menu_filter0_title"
+                    app:showAsAction="never" />
+                <item
+                    android:id="@+id/menuFilter1"
+                    android:title="@string/menu_filter1_title"
+                    app:showAsAction="never" />
+                <item
+                    android:id="@+id/menuFilter2"
+                    android:title="@string/menu_filter2_title"
+                    app:showAsAction="never" />
+                <item
+                    android:id="@+id/menuFilter3"
+                    android:title="@string/menu_filter3_title"
+                    app:showAsAction="never" />
+                <item
+                    android:id="@+id/menuFilter4"
+                    android:title="@string/menu_filter4_title"
+                    app:showAsAction="never" />
+                <item
+                    android:id="@+id/menuFilter5"
+                    android:title="@string/menu_filter5_title"
+                    app:showAsAction="never" />
+                <item
+                    android:id="@+id/menuFilter6"
+                    android:title="@string/menu_filter6_title"
+                    app:showAsAction="never" />
+                <item
+                    android:id="@+id/menuFilter7"
+                    android:title="@string/menu_filter7_title"
+                    app:showAsAction="never" />
+                <item
+                    android:id="@+id/menuFilter8"
+                    android:title="@string/menu_filter8_title"
+                    app:showAsAction="never" />
+            </group>
+        </menu>
+    </item>
+
+
+</menu>

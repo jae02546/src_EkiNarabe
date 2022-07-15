@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/staLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!--   wiki          kana         handle -->
+    <!--  close          name         handle -->
+    <!--   area          rome         handle -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/staInfoFrame"
+        android:layout_width="70dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/staMark"
+            android:layout_width="14dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_ekinarabe_line2"
+            android:gravity="center"
+            android:text="〇"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/staHint"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@+id/staHint"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:text="@string/hint_text"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toTopOf="@id/staInfo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/staMark"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@+id/staInfo"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="info"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/staMark"
+            app:layout_constraintTop_toBottomOf="@id/staHint"
+            tools:ignore="SmallSp" />
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/staWiki"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginTop="2dp"-->
+        <!--            android:gravity="center"-->
+        <!--            android:text="Wikipedia"-->
+        <!--            android:textSize="10sp"-->
+        <!--            app:layout_constraintBottom_toTopOf="@id/staInfo"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toTopOf="parent"-->
+        <!--            tools:ignore="SmallSp" />-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/staInfo"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="0dp"-->
+        <!--            android:gravity="center"-->
+        <!--            android:text="info"-->
+        <!--            android:textSize="10sp"-->
+        <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@id/staWiki"-->
+        <!--            tools:ignore="SmallSp" />-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/staKana"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:ellipsize="end"
+        android:gravity="bottom|center_horizontal"
+        android:singleLine="true"
+        android:text="こうしゅうかいどう"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@id/staName"
+        app:layout_constraintEnd_toStartOf="@id/staHandle"
+        app:layout_constraintStart_toEndOf="@id/staInfoFrame"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread"
+        app:layout_constraintVertical_weight="1"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@+id/staName"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="甲州街道"
+        android:textColor="?attr/editTextColor"
+        app:layout_constraintBottom_toTopOf="@id/staRome"
+        app:layout_constraintEnd_toStartOf="@id/staHandle"
+        app:layout_constraintStart_toEndOf="@id/staInfoFrame"
+        app:layout_constraintTop_toBottomOf="@id/staKana"
+        app:layout_constraintVertical_weight="1.5" />
+    <!--よくわからないがandroid:textColor="?attr/editTextColorにしてみる"-->
+
+    <TextView
+        android:id="@+id/staRome"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:ellipsize="end"
+        android:gravity="top|center_horizontal"
+        android:singleLine="true"
+        android:text="Koshukaido"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/staHandle"
+        app:layout_constraintStart_toEndOf="@id/staInfoFrame"
+        app:layout_constraintTop_toBottomOf="@id/staName"
+        app:layout_constraintVertical_weight="1"
+        tools:ignore="SmallSp" />
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/staWiki"-->
+    <!--        android:layout_width="60dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="2dp"-->
+    <!--        android:gravity="center"-->
+    <!--        android:text="Wikipedia"-->
+    <!--        android:textSize="10sp"-->
+    <!--        app:layout_constraintBottom_toTopOf="@id/staInfo"-->
+    <!--        app:layout_constraintEnd_toStartOf="@id/staKana"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        tools:ignore="SmallSp" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/staInfo"-->
+    <!--        android:layout_width="60dp"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:gravity="center"-->
+    <!--        android:text="info"-->
+    <!--        android:textSize="10sp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toStartOf="@id/staKana"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/staWiki"-->
+    <!--        tools:ignore="SmallSp" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/staKana"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:ellipsize="end"-->
+    <!--        android:gravity="bottom|center_horizontal"-->
+    <!--        android:singleLine="true"-->
+    <!--        android:text="こうしゅうかいどう"-->
+    <!--        android:textSize="10sp"-->
+    <!--        app:layout_constraintBottom_toTopOf="@id/staName"-->
+    <!--        app:layout_constraintEnd_toStartOf="@id/staHandle"-->
+    <!--        app:layout_constraintStart_toEndOf="@id/staWiki"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_chainStyle="spread"-->
+    <!--        app:layout_constraintVertical_weight="1"-->
+    <!--        tools:ignore="SmallSp" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/staName"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:ellipsize="end"-->
+    <!--        android:gravity="center"-->
+    <!--        android:singleLine="true"-->
+    <!--        android:text="甲州街道"-->
+    <!--        android:textColor="?attr/editTextColor"-->
+    <!--        app:layout_constraintBottom_toTopOf="@id/staRome"-->
+    <!--        app:layout_constraintEnd_toStartOf="@id/staHandle"-->
+    <!--        app:layout_constraintStart_toEndOf="@id/staWiki"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/staKana"-->
+    <!--        app:layout_constraintVertical_weight="1.5" />-->
+    <!--    &lt;!&ndash;よくわからないがandroid:textColor="?attr/editTextColorにしてみる"&ndash;&gt;-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/staRome"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:ellipsize="end"-->
+    <!--        android:gravity="top|center_horizontal"-->
+    <!--        android:singleLine="true"-->
+    <!--        android:text="Koshukaido"-->
+    <!--        android:textSize="10sp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toStartOf="@id/staHandle"-->
+    <!--        app:layout_constraintStart_toEndOf="@id/staWiki"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/staName"-->
+    <!--        app:layout_constraintVertical_weight="1"-->
+    <!--        tools:ignore="SmallSp" />-->
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/staHandle"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:src="@drawable/baseline_swap_vert_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

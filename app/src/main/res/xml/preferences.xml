@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory
+        android:title="@string/setting_playerName_title"
+        app:iconSpaceReserved="false">
+        <EditTextPreference
+            app:defaultValue="@string/setting_playerName1_defaultValue"
+            app:iconSpaceReserved="false"
+            app:key="@string/setting_playerName1_key"
+            app:title="@string/setting_playerName1_title" />
+        <EditTextPreference
+            app:defaultValue="@string/setting_playerName2_defaultValue"
+            app:iconSpaceReserved="false"
+            app:key="@string/setting_playerName2_key"
+            app:title="@string/setting_playerName2_title" />
+        <EditTextPreference
+            app:defaultValue="@string/setting_playerName3_defaultValue"
+            app:iconSpaceReserved="false"
+            app:key="@string/setting_playerName3_key"
+            app:title="@string/setting_playerName3_title" />
+        <EditTextPreference
+            app:defaultValue="@string/setting_playerName4_defaultValue"
+            app:iconSpaceReserved="false"
+            app:key="@string/setting_playerName4_key"
+            app:title="@string/setting_playerName4_title" />
+        <EditTextPreference
+            app:defaultValue="@string/setting_playerName5_defaultValue"
+            app:iconSpaceReserved="false"
+            app:key="@string/setting_playerName5_key"
+            app:title="@string/setting_playerName5_title" />
+    </PreferenceCategory>
+    <PreferenceCategory app:iconSpaceReserved="false">
+        <ListPreference
+            app:defaultValue="@string/setting_soundNo_defaultValue"
+            app:dialogTitle="@string/setting_sound_title"
+            app:entries="@array/setting_sound_entries"
+            app:entryValues="@array/setting_soundNo_entryValues"
+            app:iconSpaceReserved="false"
+            app:key="@string/setting_soundNo_key"
+            app:title="@string/setting_sound_title" />
+        <ListPreference
+            app:defaultValue="@string/setting_vibrationNo_defaultValue"
+            app:dialogTitle="@string/setting_vibration_title"
+            app:entries="@array/setting_vibration_entries"
+            app:entryValues="@array/setting_vibrationNo_entryValues"
+            app:iconSpaceReserved="false"
+            app:key="@string/setting_vibrationNo_key"
+            app:title="@string/setting_vibration_title" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:id="@+id/prefDataset"
+        app:iconSpaceReserved="false"
+        app:isPreferenceVisible="false">
+        <!--データセットの切替は取り敢えず非表示とする-->
+        <ListPreference
+            app:defaultValue="@string/setting_datasetNo_defaultValue"
+            app:dialogTitle="@string/setting_dataset_title"
+            app:entries="@array/setting_dataset_entries"
+            app:entryValues="@array/setting_datasetNo_entryValues"
+            app:iconSpaceReserved="false"
+            app:key="@string/setting_datasetNo_key"
+            app:title="@string/setting_dataset_title" />
+    </PreferenceCategory>
+    <PreferenceCategory app:iconSpaceReserved="false">
+        <Preference
+            app:iconSpaceReserved="false"
+            app:key="@string/setting_privacy_policy_key"
+            app:title="@string/setting_privacy_policy_title">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="@string/setting_privacy_policy_url" />
+        </Preference>
+        <Preference
+            app:iconSpaceReserved="false"
+            app:key="@string/setting_about_key"
+            app:title="@string/setting_about_title">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="@string/setting_about_url" />
+        </Preference>
+    </PreferenceCategory>
+</PreferenceScreen>

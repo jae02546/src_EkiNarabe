@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--app:showAsAction="ifRoom">-->
+    <!--app:showAsAction="always">-->
+    <!--app:showAsAction="never">-->
+
+    <item
+        android:id="@+id/menuPlayer"
+        android:title="@string/menu_player"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menuSelectLine"
+        android:title="@string/menu_selectLine"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:title="@string/menu_selectPlayer"
+        app:showAsAction="never">
+        <menu>
+            <group
+                android:checkableBehavior="single">
+                <item
+                    android:id="@+id/menuPlayer1"
+                    android:title="@string/setting_playerName1_defaultValue"
+                    app:showAsAction="never" />
+                <item
+                    android:id="@+id/menuPlayer2"
+                    android:title="@string/setting_playerName2_defaultValue"
+                    app:showAsAction="never" />
+                <item
+                    android:id="@+id/menuPlayer3"
+                    android:title="@string/setting_playerName3_defaultValue"
+                    app:showAsAction="never" />
+                <item
+                    android:id="@+id/menuPlayer4"
+                    android:title="@string/setting_playerName4_defaultValue"
+                    app:showAsAction="never" />
+                <item
+                    android:id="@+id/menuPlayer5"
+                    android:title="@string/setting_playerName5_defaultValue"
+                    app:showAsAction="never" />
+            </group>
+        </menu>
+    </item>
+
+    <!--    こちらにしたいがitemタイトルとグループ区切り線が表示されない?のでやめる-->
+    <!--    <item-->
+    <!--        android:title="@string/menu_player"-->
+    <!--        app:showAsAction="never">-->
+    <!--        <group-->
+    <!--            android:id="@+id/menuPlayer"-->
+    <!--            android:checkableBehavior="single">-->
+    <!--            <item-->
+    <!--                android:id="@+id/menuPlayer1"-->
+    <!--                android:title="@string/setting_player1_defaultValue"-->
+    <!--                app:showAsAction="never" />-->
+    <!--            <item-->
+    <!--                android:id="@+id/menuPlayer2"-->
+    <!--                android:title="@string/setting_player2_defaultValue"-->
+    <!--                app:showAsAction="never" />-->
+    <!--            <item-->
+    <!--                android:id="@+id/menuPlayer3"-->
+    <!--                android:title="@string/setting_player3_defaultValue"-->
+    <!--                app:showAsAction="never" />-->
+    <!--            <item-->
+    <!--                android:id="@+id/menuPlayer4"-->
+    <!--                android:title="@string/setting_player4_defaultValue"-->
+    <!--                app:showAsAction="never" />-->
+    <!--            <item-->
+    <!--                android:id="@+id/menuPlayer5"-->
+    <!--                android:title="@string/setting_player5_defaultValue"-->
+    <!--                app:showAsAction="never" />-->
+    <!--        </group>-->
+    <!--    </item>-->
+
+    <item
+        android:id="@+id/menuSetting"
+        android:title="@string/menu_setting"
+        app:showAsAction="never" />
+
+
+</menu>

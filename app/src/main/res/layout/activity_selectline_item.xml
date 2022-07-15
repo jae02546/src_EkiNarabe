@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!--   wiki            kana         cont -->
+    <!--  record           name         cont -->
+    <!-- 00:00:00          rome         init -->
+    <!--  player  m/n complete 00:00:00 init -->
+
+    <TextView
+        android:id="@+id/selLineHint"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/hint_text"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@id/selLineRecord"
+        app:layout_constraintEnd_toStartOf="@id/selLineKana"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@+id/selLineRecord"
+        android:layout_width="70dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="record"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/selLineKana"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/selLineHint"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@+id/selLineKana"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:ellipsize="end"
+        android:gravity="bottom|center_horizontal"
+        android:singleLine="true"
+        android:text="たまものれーる"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@id/selLineName"
+        app:layout_constraintEnd_toStartOf="@id/selLineInit"
+        app:layout_constraintStart_toEndOf="@id/selLineRecord"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread"
+        app:layout_constraintVertical_weight="1"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@+id/selLineName"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="多摩モノレール"
+        android:textColor="?attr/editTextColor"
+        app:layout_constraintBottom_toTopOf="@id/selLineRome"
+        app:layout_constraintEnd_toStartOf="@id/selLineInit"
+        app:layout_constraintStart_toEndOf="@id/selLineRecord"
+        app:layout_constraintTop_toBottomOf="@id/selLineKana"
+        app:layout_constraintVertical_weight="1.5" />
+    <!--よくわからないがandroid:textColor="?attr/editTextColorにしてみる"-->
+
+    <TextView
+        android:id="@+id/selLineRome"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:ellipsize="end"
+        android:gravity="top|center_horizontal"
+        android:singleLine="true"
+        android:text="Tama-Monorail"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@id/selLineSupplement"
+        app:layout_constraintEnd_toStartOf="@id/selLineInit"
+        app:layout_constraintStart_toEndOf="@id/selLineRecord"
+        app:layout_constraintTop_toBottomOf="@id/selLineName"
+        app:layout_constraintVertical_weight="1"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@+id/selLineSupplement"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:ellipsize="end"
+        android:gravity="top|center_horizontal"
+        android:singleLine="true"
+        android:text="廃線"
+        android:visibility="visible"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@id/selLineAnswer"
+        app:layout_constraintEnd_toStartOf="@id/selLineInit"
+        app:layout_constraintStart_toEndOf="@id/selLineRecord"
+        app:layout_constraintTop_toBottomOf="@id/selLineRome"
+        app:layout_constraintVertical_weight="1"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@+id/selLineAnswer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="0/19駅 complete 00:00:00"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/selLineInit"
+        app:layout_constraintStart_toEndOf="@id/selLineRecord"
+        app:layout_constraintTop_toBottomOf="@id/selLineSupplement"
+        app:layout_constraintVertical_weight="1"
+        tools:ignore="SmallSp" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/selLineKana"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:ellipsize="end"-->
+<!--        android:gravity="bottom|center_horizontal"-->
+<!--        android:singleLine="true"-->
+<!--        android:text="たまものれーる"-->
+<!--        android:textSize="10sp"-->
+<!--        app:layout_constraintBottom_toTopOf="@id/selLineName"-->
+<!--        app:layout_constraintEnd_toStartOf="@id/selLineInit"-->
+<!--        app:layout_constraintStart_toEndOf="@id/selLineRecord"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_chainStyle="spread"-->
+<!--        app:layout_constraintVertical_weight="1"-->
+<!--        tools:ignore="SmallSp" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/selLineName"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:ellipsize="end"-->
+<!--        android:gravity="center"-->
+<!--        android:singleLine="true"-->
+<!--        android:text="多摩モノレール"-->
+<!--        android:textColor="?attr/editTextColor"-->
+<!--        app:layout_constraintBottom_toTopOf="@id/selLineRome"-->
+<!--        app:layout_constraintEnd_toStartOf="@id/selLineInit"-->
+<!--        app:layout_constraintStart_toEndOf="@id/selLineRecord"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/selLineKana"-->
+<!--        app:layout_constraintVertical_weight="1.5" />-->
+<!--    &lt;!&ndash;よくわからないがandroid:textColor="?attr/editTextColorにしてみる"&ndash;&gt;-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/selLineRome"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:ellipsize="end"-->
+<!--        android:gravity="top|center_horizontal"-->
+<!--        android:singleLine="true"-->
+<!--        android:text="Tama-Monorail"-->
+<!--        android:textSize="10sp"-->
+<!--        app:layout_constraintBottom_toTopOf="@id/selLineAnswer"-->
+<!--        app:layout_constraintEnd_toStartOf="@id/selLineInit"-->
+<!--        app:layout_constraintStart_toEndOf="@id/selLineRecord"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/selLineName"-->
+<!--        app:layout_constraintVertical_weight="1"-->
+<!--        tools:ignore="SmallSp" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/selLineAnswer"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:ellipsize="end"-->
+<!--        android:gravity="center"-->
+<!--        android:singleLine="true"-->
+<!--        android:text="0/19駅 complete 00:00:00"-->
+<!--        android:textSize="10sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toStartOf="@id/selLineInit"-->
+<!--        app:layout_constraintStart_toEndOf="@id/selLineRecord"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/selLineRome"-->
+<!--        app:layout_constraintVertical_weight="1"-->
+<!--        tools:ignore="SmallSp" />-->
+
+    <!--       kana        cont -->
+    <!--       name        cont -->
+    <!--       rome        init -->
+    <!-- progress complete init -->
+    <!--    <TextView-->
+    <!--        android:id="@+id/selLineKana"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:ellipsize="end"-->
+    <!--        android:gravity="bottom|center_horizontal"-->
+    <!--        android:singleLine="true"-->
+    <!--        android:text="たまものれーる"-->
+    <!--        android:textSize="10sp"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/selLineName"-->
+    <!--        app:layout_constraintEnd_toStartOf="@id/selLineInit"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_chainStyle="spread"-->
+    <!--        app:layout_constraintVertical_weight="1"-->
+    <!--        tools:ignore="SmallSp" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/selLineName"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:ellipsize="end"-->
+    <!--        android:gravity="center"-->
+    <!--        android:singleLine="true"-->
+    <!--        android:text="多摩モノレール"-->
+    <!--        android:textColor="?attr/editTextColor"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/selLineRome"-->
+    <!--        app:layout_constraintEnd_toStartOf="@id/selLineInit"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/selLineKana"-->
+    <!--        app:layout_constraintVertical_weight="1.5" />-->
+    <!--        &lt;!&ndash;よくわからないがandroid:textColor="?attr/editTextColorにしてみる"&ndash;&gt;-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/selLineRome"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:ellipsize="end"-->
+    <!--        android:gravity="top|center_horizontal"-->
+    <!--        android:singleLine="true"-->
+    <!--        android:text="Tama-Monorail"-->
+    <!--        android:textSize="10sp"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/selLineAnswer"-->
+    <!--        app:layout_constraintEnd_toStartOf="@id/selLineInit"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/selLineName"-->
+    <!--        app:layout_constraintVertical_weight="1"-->
+    <!--        tools:ignore="SmallSp" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/selLineAnswer"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:ellipsize="end"-->
+    <!--        android:gravity="center"-->
+    <!--        android:singleLine="true"-->
+    <!--        android:text="0/19駅 complete!! 00:00:00 record 00:00:00 しゃけ"-->
+    <!--        android:textSize="10sp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toStartOf="@id/selLineInit"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/selLineRome"-->
+    <!--        app:layout_constraintVertical_weight="1"-->
+    <!--        tools:ignore="SmallSp" />-->
+
+    <!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--        android:id="@+id/progressMain"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/selLineInit"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/selLineRome"-->
+    <!--        app:layout_constraintVertical_weight="1">-->
+    <!--        &lt;!&ndash;        android:layout_height="0dp"&ndash;&gt;-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/selLineSta"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginEnd="3dp"-->
+    <!--            android:gravity="center"-->
+    <!--            android:text="0/19駅"-->
+    <!--            android:textSize="10sp"-->
+    <!--            app:layout_constraintEnd_toStartOf="@+id/selLineComp"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent"-->
+    <!--            tools:ignore="SmallSp" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/selLineComp"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:gravity="center"-->
+    <!--            android:text="complete!!"-->
+    <!--            android:textSize="10sp"-->
+    <!--            app:layout_constraintEnd_toStartOf="@+id/selLineMinComp"-->
+    <!--            app:layout_constraintStart_toEndOf="@+id/selLineSta"-->
+    <!--            app:layout_constraintTop_toTopOf="parent"-->
+    <!--            tools:ignore="SmallSp" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/selLineMinComp"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginStart="3dp"-->
+    <!--            android:gravity="center"-->
+    <!--            android:text="最短 00:00:00 しゃけ"-->
+    <!--            android:textSize="10sp"-->
+    <!--            app:layout_constraintEnd_toStartOf="parent"-->
+    <!--            app:layout_constraintStart_toEndOf="@+id/selLineComp"-->
+    <!--            app:layout_constraintTop_toTopOf="parent"-->
+    <!--            tools:ignore="SmallSp" />-->
+
+    <!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+    <Button
+        android:id="@+id/selLineInit"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="0dp"
+        android:paddingStart="0dp"
+        android:paddingTop="0dp"
+        android:paddingEnd="0dp"
+        android:paddingBottom="0dp"
+        android:text="@string/button_init_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/selLineCont"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="0dp"
+        android:paddingStart="0dp"
+        android:paddingTop="0dp"
+        android:paddingEnd="0dp"
+        android:paddingBottom="0dp"
+        android:text="@string/button_cont_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/selLineInit" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

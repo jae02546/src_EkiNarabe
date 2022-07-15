@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/playLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/playRecord1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_top"
+        android:ellipsize="end"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:singleLine="true"
+        android:text="全路線数"
+        android:textColor="?attr/editTextColor"
+        app:layout_constraintBottom_toTopOf="@id/playRecord2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/playRecord2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_bottom"
+        android:ellipsize="end"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="8dp"
+        android:singleLine="true"
+        android:text="コンプ数"
+        android:textColor="?attr/editTextColor"
+        app:layout_constraintBottom_toTopOf="@id/player1a"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/playRecord1" />
+
+    <TextView
+        android:id="@+id/player1a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="8dp"
+        android:singleLine="true"
+        android:text="プレイヤー1"
+        android:textColor="?attr/editTextColor"
+        app:layout_constraintBottom_toTopOf="@id/player1b"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/playRecord2" />
+
+    <TextView
+        android:id="@+id/player1b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="16dp"
+        android:singleLine="true"
+        android:text="コンプ数"
+        android:textColor="?attr/editTextColor"
+        app:layout_constraintBottom_toTopOf="@id/player1c"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/player1a" />
+
+    <TextView
+        android:id="@+id/player1c"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_bottom"
+        android:ellipsize="end"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="16dp"
+        android:singleLine="true"
+        android:text="最速コンプ数"
+        android:textColor="?attr/editTextColor"
+        app:layout_constraintBottom_toTopOf="@id/player2a"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/player1b" />
+
+    <TextView
+        android:id="@+id/player2a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="8dp"
+        android:singleLine="true"
+        android:text="プレイヤー2"
+        android:textColor="?attr/editTextColor"
+        app:layout_constraintBottom_toTopOf="@id/player2b"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/player1c" />
+
+    <TextView
+        android:id="@+id/player2b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="16dp"
+        android:singleLine="true"
+        android:text="コンプ数"
+        android:textColor="?attr/editTextColor"
+        app:layout_constraintBottom_toTopOf="@id/player2c"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/player2a" />
+
+    <TextView
+        android:id="@+id/player2c"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_bottom"
+        android:ellipsize="end"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="16dp"
+        android:singleLine="true"
+        android:text="最速コンプ数"
+        android:textColor="?attr/editTextColor"
+        app:layout_constraintBottom_toTopOf="@id/player3a"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/player2b" />
+
+    <TextView
+        android:id="@+id/player3a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="8dp"
+        android:singleLine="true"
+        android:text="プレイヤー3"
+        android:textColor="?attr/editTextColor"
+        app:layout_constraintBottom_toTopOf="@id/player3b"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/player2c" />
+
+    <TextView
+        android:id="@+id/player3b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="16dp"
+        android:singleLine="true"
+        android:text="コンプ数"
+        android:textColor="?attr/editTextColor"
+        app:layout_constraintBottom_toTopOf="@id/player3c"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/player3a" />
+
+    <TextView
+        android:id="@+id/player3c"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_bottom"
+        android:ellipsize="end"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="16dp"
+        android:singleLine="true"
+        android:text="最速コンプ数"
+        android:textColor="?attr/editTextColor"
+        app:layout_constraintBottom_toTopOf="@id/player4a"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/player3b" />
+
+    <TextView
+        android:id="@+id/player4a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="8dp"
+        android:singleLine="true"
+        android:text="プレイヤー4"
+        android:textColor="?attr/editTextColor"
+        app:layout_constraintBottom_toTopOf="@id/player4b"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/player3c" />
+
+    <TextView
+        android:id="@+id/player4b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="16dp"
+        android:singleLine="true"
+        android:text="コンプ数"
+        android:textColor="?attr/editTextColor"
+        app:layout_constraintBottom_toTopOf="@id/player4c"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/player4a" />
+
+    <TextView
+        android:id="@+id/player4c"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_bottom"
+        android:ellipsize="end"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="16dp"
+        android:singleLine="true"
+        android:text="最速コンプ数"
+        android:textColor="?attr/editTextColor"
+        app:layout_constraintBottom_toTopOf="@id/player5a"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/player4b" />
+
+    <TextView
+        android:id="@+id/player5a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="8dp"
+        android:singleLine="true"
+        android:text="プレイヤー5"
+        android:textColor="?attr/editTextColor"
+        app:layout_constraintBottom_toTopOf="@id/player5b"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/player4c" />
+
+    <TextView
+        android:id="@+id/player5b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="16dp"
+        android:singleLine="true"
+        android:text="コンプ数"
+        android:textColor="?attr/editTextColor"
+        app:layout_constraintBottom_toTopOf="@id/player5c"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/player5a" />
+
+    <TextView
+        android:id="@+id/player5c"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_bottom"
+        android:ellipsize="end"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="16dp"
+        android:singleLine="true"
+        android:text="最速コンプ数"
+        android:textColor="?attr/editTextColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/player5b" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

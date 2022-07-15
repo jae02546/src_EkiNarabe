@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--   wiki            kana          info2  -->
+    <!--                   name          info2  -->
+    <!--  record           rome          info2  -->
+    <!-- 00:00:00      close nickname    info2  -->
+    <!--  player  complete 00:00:00 m/n  info2 -->
+    <!--               recyclerView            -->
+
+    <TextView
+        android:id="@+id/lineHint"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_top"
+        android:gravity="center"
+        android:paddingTop="8dp"
+        android:text="@string/hint_text"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@id/lineRecord"
+        app:layout_constraintEnd_toStartOf="@id/lineKana"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@+id/lineRecord"
+        android:layout_width="70dp"
+        android:layout_height="0dp"
+        android:background="@drawable/border_bottom"
+        android:gravity="center"
+        android:text="record"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@id/lineRecyclerView"
+        app:layout_constraintEnd_toStartOf="@id/lineKana"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lineHint"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@+id/lineKana"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_top"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:singleLine="true"
+        android:text="たまものれーる"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@id/lineName"
+        app:layout_constraintEnd_toStartOf="@id/lineSupplement2"
+        app:layout_constraintStart_toEndOf="@id/lineHint"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread"
+        app:layout_constraintVertical_weight="1"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@+id/lineName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="多摩モノレール"
+        android:textColor="?attr/editTextColor"
+        app:layout_constraintBottom_toTopOf="@id/lineRome"
+        app:layout_constraintEnd_toStartOf="@id/lineSupplement2"
+        app:layout_constraintStart_toEndOf="@id/lineHint"
+        app:layout_constraintTop_toBottomOf="@id/lineKana"
+        app:layout_constraintVertical_weight="1.5" />
+    <!--よくわからないがandroid:textColor="?attr/editTextColorにしてみる"-->
+
+    <TextView
+        android:id="@+id/lineRome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="Tama-Monorail"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@id/lineSupplement1"
+        app:layout_constraintEnd_toStartOf="@id/lineSupplement2"
+        app:layout_constraintStart_toEndOf="@id/lineHint"
+        app:layout_constraintTop_toBottomOf="@id/lineName"
+        app:layout_constraintVertical_weight="1"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@+id/lineSupplement1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="奥の細道湯けむりライン"
+        android:textSize="10sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@id/lineAnswer"
+        app:layout_constraintEnd_toStartOf="@id/lineSupplement2"
+        app:layout_constraintStart_toEndOf="@id/lineHint"
+        app:layout_constraintTop_toBottomOf="@id/lineRome"
+        app:layout_constraintVertical_weight="1"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@+id/lineAnswer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_bottom"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:singleLine="true"
+        android:text="0/19駅 complete 00:00:00"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@id/lineRecyclerView"
+        app:layout_constraintEnd_toStartOf="@id/lineSupplement2"
+        app:layout_constraintStart_toEndOf="@id/lineHint"
+        app:layout_constraintTop_toBottomOf="@id/lineSupplement1"
+        app:layout_constraintVertical_weight="1"
+        tools:ignore="SmallSp" />
+    <!--    app:layout_constraintBottom_toBottomOf="parent"-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/lineKana"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:background="@drawable/border_top"-->
+    <!--        android:ellipsize="end"-->
+    <!--        android:gravity="center"-->
+    <!--        android:paddingTop="5dp"-->
+    <!--        android:singleLine="true"-->
+    <!--        android:text="たまものれーる"-->
+    <!--        android:textSize="10sp"-->
+    <!--        app:layout_constraintBottom_toTopOf="@id/lineName"-->
+    <!--        app:layout_constraintEnd_toStartOf="@id/lineInfo"-->
+    <!--        app:layout_constraintStart_toEndOf="@id/lineWiki"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_chainStyle="spread"-->
+    <!--        app:layout_constraintVertical_weight="1"-->
+    <!--        tools:ignore="SmallSp" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/lineName"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:ellipsize="end"-->
+    <!--        android:gravity="center"-->
+    <!--        android:singleLine="true"-->
+    <!--        android:text="多摩モノレール"-->
+    <!--        android:textColor="?attr/editTextColor"-->
+    <!--        app:layout_constraintBottom_toTopOf="@id/lineRome"-->
+    <!--        app:layout_constraintEnd_toStartOf="@id/lineInfo"-->
+    <!--        app:layout_constraintStart_toEndOf="@id/lineWiki"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/lineKana"-->
+    <!--        app:layout_constraintVertical_weight="1.5" />-->
+    <!--    &lt;!&ndash;よくわからないがandroid:textColor="?attr/editTextColorにしてみる"&ndash;&gt;-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/lineRome"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:ellipsize="end"-->
+    <!--        android:gravity="center"-->
+    <!--        android:singleLine="true"-->
+    <!--        android:text="Tama-Monorail"-->
+    <!--        android:textSize="10sp"-->
+    <!--        app:layout_constraintBottom_toTopOf="@id/lineAnswer"-->
+    <!--        app:layout_constraintEnd_toStartOf="@id/lineInfo"-->
+    <!--        app:layout_constraintStart_toEndOf="@id/lineWiki"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/lineName"-->
+    <!--        app:layout_constraintVertical_weight="1"-->
+    <!--        tools:ignore="SmallSp" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/lineAnswer"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:background="@drawable/border_bottom"-->
+    <!--        android:ellipsize="end"-->
+    <!--        android:gravity="center"-->
+    <!--        android:paddingBottom="5dp"-->
+    <!--        android:singleLine="true"-->
+    <!--        android:text="0/19駅 complete 00:00:00"-->
+    <!--        android:textSize="10sp"-->
+    <!--        app:layout_constraintBottom_toTopOf="@id/lineRecyclerView"-->
+    <!--        app:layout_constraintEnd_toStartOf="@id/lineInfo"-->
+    <!--        app:layout_constraintStart_toEndOf="@id/lineWiki"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/lineRome"-->
+    <!--        app:layout_constraintVertical_weight="1"-->
+    <!--        tools:ignore="SmallSp" />-->
+    <!--    &lt;!&ndash;    app:layout_constraintBottom_toBottomOf="parent"&ndash;&gt;-->
+
+    <TextView
+        android:id="@+id/lineSupplement2"
+        android:layout_width="70dp"
+        android:layout_height="0dp"
+        android:background="@drawable/border_top_bottom"
+        android:gravity="center"
+        android:text="現在は青い森鉄道に移管されています"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@id/lineRecyclerView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/lineKana"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SmallSp" />
+    <!--    app:layout_constraintStart_toEndOf="@id/lineKana"-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lineRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/border_bottom"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toTopOf="@id/adFrame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lineAnswer" />
+
+    <FrameLayout
+        android:id="@+id/adFrame"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lineRecyclerView">
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:adSize="BANNER"
+            app:adUnitId="ca-app-pub-9480495509204975/2480646304" />
+        <!--test ca-app-pub-3940256099942544/6300978111 -->
+        <!--本番 ca-app-pub-9480495509204975/2480646304 -->
+
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
